@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cole model estimation from Re{Z}</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="toolbar">
+    <h1>Cole model estimation from Re{Z}</h1>
+    <div class="controls">
+      <label for="prescaler">Frequency in CSV</label>
+      <select id="prescaler">
+        <option value="1">Hz</option>
+        <option value="1000">kHz</option>
+      </select>
+      <button id="openBtn" type="button">Open CSV</button>
+      <input id="fileInput" type="file" accept=".csv,.txt,text/csv,text/plain" hidden>
+    </div>
+  </header>
+
+  <main>
+    <canvas id="view" width="1200" height="680"></canvas>
+    <p class="hint">CSV with three columns: f, R, |X|. A header row is skipped automatically. Separators "," or ";" (with decimal comma) are supported. Shortcut: O opens a file.</p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

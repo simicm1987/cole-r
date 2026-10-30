@@ -2,7 +2,7 @@
 
 Browser-based tool for estimating the Cole-impedance model parameters (R0, R∞, τ, α) using only the real part of the measured impedance. Everything runs locally in the browser, no data is uploaded.
 
-**Live demo:** https://USERNAME.github.io/cole-r/
+**Live demo:** https://simicm1987.github.io/cole-r/
 
 ## Features
 
